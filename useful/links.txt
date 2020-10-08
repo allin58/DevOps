@@ -1,0 +1,12 @@
+chef
+https://randomant.net/vagrant-chef-java-automation/
+https://supermarket.chef.io/cookbooks/java#readme
+https://www.jrebel.com/blog/how-to-create-a-virtualized-environment
+
+
+shell
+https://gist.github.com/adeubank/994a4188fa8bd5513f26
+
+
+ELK
+https://mkdev.me/posts/vvedenie-v-elk-sobiraem-filtruem-i-analiziruem-bolshie-dannye
