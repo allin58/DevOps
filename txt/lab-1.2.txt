@@ -6,7 +6,7 @@
     su - ${USER}
     Запустил nginx - docker run -d -p 8080:80 -v $PWD/nginx/etc:/etc/nginx/ --name my-nginx nginx .
     Остановил контенер - docker stop my-nginx .
-![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/65.PNG)  
+
 
 1.8 Создал Dockerfile
     docker build -t apachimage .
