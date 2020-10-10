@@ -1,0 +1,25 @@
+---
+- name: Install app
+  hosts: all
+  become: yes  
+  
+   tasks: 
+    - name: Install apache2
+      apt: name=apache2 update_cache=yes state=latest
+      
+    - name: Install Nginx2
+      yum:      
+        name: nginx4
+        state: latest
+        
+    - name: Install MySQL server
+      yum:      
+        name: mysql-server
+        state: latest       
+        
+    - name: Install Install MySQL client
+      yum:      
+        name: mysql-client
+        state: latest       
+        
+  

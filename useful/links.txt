@@ -10,3 +10,18 @@ https://gist.github.com/adeubank/994a4188fa8bd5513f26
 
 ELK
 https://mkdev.me/posts/vvedenie-v-elk-sobiraem-filtruem-i-analiziruem-bolshie-dannye
+
+
+packer
+https://www.serverlab.ca/tutorials/dev-ops/automation/how-to-use-packer-to-create-ubuntu-18-04-vagrant-boxes/
+https://habr.com/ru/post/251529/
+https://habr.com/ru/company/express42/blog/212085/
+
+
+qeum
+https://losst.ru/kak-polzovatsya-qemu
+
+docker
+https://hub.docker.com/
+https://devtutorial.io/how-to-install-and-use-docker-on-ubuntu-18-04.html
+https://www.digitalocean.com/community/tutorials/docker-ru
