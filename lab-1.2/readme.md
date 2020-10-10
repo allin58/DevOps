@@ -1,17 +1,17 @@
- 
-1.7 Установил docker - curl -fsSL get.docker.com -o get-docker.sh , sh get-docker.sh
-    Скачал образ с nginx - docker pull nginx:latest
-    Что бы docker использовать без sudo: 
+п»ї 
+1.7 РЈСЃС‚Р°РЅРѕРІРёР» docker - curl -fsSL get.docker.com -o get-docker.sh , sh get-docker.sh
+    РЎРєР°С‡Р°Р» РѕР±СЂР°Р· СЃ nginx - docker pull nginx:latest
+    Р§С‚Рѕ Р±С‹ docker РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р±РµР· sudo: 
     sudo usermod -aG docker $USER,
     su - ${USER}
-    Запустил nginx - docker run -d -p 8080:80 -v $PWD/nginx/etc:/etc/nginx/ --name my-nginx nginx .
-    Остановил контенер - docker stop my-nginx .
+    Р—Р°РїСѓСЃС‚РёР» nginx - docker run -d -p 8080:80 -v $PWD/nginx/etc:/etc/nginx/ --name my-nginx nginx .
+    РћСЃС‚Р°РЅРѕРІРёР» РєРѕРЅС‚РµРЅРµСЂ - docker stop my-nginx .
 ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/65.PNG)  
 
-1.8 Создал Dockerfile
+1.8 РЎРѕР·РґР°Р» Dockerfile
     docker build -t apachimage .
     docker run -it -p 8081:80 --name apache2 -h allin5885 apachimage bash  
-    Создал папки 
+    РЎРѕР·РґР°Р» РїР°РїРєРё 
     mkdir web
     cd web
     mkdir etc
@@ -20,14 +20,14 @@
 ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/1.PNG)  
 
 
-    Остановил контенер
+    РћСЃС‚Р°РЅРѕРІРёР» РєРѕРЅС‚РµРЅРµСЂ
     docker stop apache2
     
-    Закомитил контенер в образ
+    Р—Р°РєРѕРјРёС‚РёР» РєРѕРЅС‚РµРЅРµСЂ РІ РѕР±СЂР°Р·
     docker commit apach2 allin5885/apache2
     docker push allin5885/apache2
 
-    Ссылка на dockerhub
+    РЎСЃС‹Р»РєР° РЅР° dockerhub
     https://hub.docker.com/repository/docker/allin5885/apache2 
 
     
