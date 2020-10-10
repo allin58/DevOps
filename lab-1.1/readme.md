@@ -1,19 +1,19 @@
-1.1 С помощью packer создал box: 
+1.1 РЎ РїРѕРјРѕС‰СЊСЋ packer СЃРѕР·РґР°Р» box: 
     vagrant init hashocorp/bionic64,
     packer build ubuntu.json
 
-1.2 Запусти виртуальную машину:
+1.2 Р—Р°РїСѓСЃС‚Рё РІРёСЂС‚СѓР°Р»СЊРЅСѓСЋ РјР°С€РёРЅСѓ:
     vagrant up,
-    vagrant global-status >  статус - запущена
+    vagrant global-status >  СЃС‚Р°С‚СѓСЃ - Р·Р°РїСѓС‰РµРЅР°
 
 
-1.3 Устанавил требуемое ПО  через ansible(пока не получилось установить java и tomcat):
-    Проверил соединение
+1.3 РЈСЃС‚Р°РЅР°РІРёР» С‚СЂРµР±СѓРµРјРѕРµ РџРћ  С‡РµСЂРµР· ansible(РїРѕРєР° РЅРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ java Рё tomcat):
+    РџСЂРѕРІРµСЂРёР» СЃРѕРµРґРёРЅРµРЅРёРµ
     ansible -i hosts.txt all -m ping -u vagrant --ask-pass
 
   ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.1/ping.PNG) 
 
-    Устанавил ПО
+    РЈСЃС‚Р°РЅР°РІРёР» РџРћ
     ansible-playbook playbook.yml -u vagrant --ask-pass
 
    ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.1/15.PNG) 
@@ -25,26 +25,9 @@
 
 ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.1/11.PNG)  
 
-1.4 Пробросил порты, добавив в файл Vagrant  
+1.4 РџСЂРѕР±СЂРѕСЃРёР» РїРѕСЂС‚С‹, РґРѕР±Р°РІРёРІ РІ С„Р°Р№Р» Vagrant  
     config.vm.network "forwarded_port", guest: 22, host: 22022
-    На хосте получил ответ серверов(apch,nginx), запущенных на гостевой ОС
+    РќР° С…РѕСЃС‚Рµ РїРѕР»СѓС‡РёР» РѕС‚РІРµС‚ СЃРµСЂРІРµСЂРѕРІ(apch,nginx), Р·Р°РїСѓС‰РµРЅРЅС‹С… РЅР° РіРѕСЃС‚РµРІРѕР№ РћРЎ
 
 ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.1/1.PNG)  
     
-
-  
-  
-1.7 Установил docker - curl -fsSL get.docker.com -o get-docker.sh , sh get-docker.sh
-    Скачал nginx - docker pull nginx:latest
-    Запустил nginx - docker run -d -p 8080:80 -v $PWD/nginx/etc:/etc/nginx/ --name my-nginx nginx .
-    Остановил контенер - docker stop my-nginx .
-    
-    
-    
-    
-    
-     
-     
-     
-      
-      
