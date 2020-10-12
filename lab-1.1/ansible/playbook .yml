@@ -1,0 +1,41 @@
+---
+- name: Install app
+  hosts: all    
+  become: yes 
+  roles:
+    - srsp.oracle-java   
+    - { role: flxpeters.tomcat8, tomcat_java_home: /path/to/java/jre }
+
+  vars:
+    - java_version: 8
+    - java_subversion: 201
+    - java_download_from: local     
+
+
+   
+  tasks: 
+  
+  - name: Install apache2
+    apt: name=apache2 update_cache=yes state=latest      
+    
+  - name: Install Nginx2
+    yum:
+      name: nginx
+      state: latest      
+
+  - name: Install MySQL server
+    yum:
+     name: mysql-server     
+     state: latest
+     
+  - name: Install MySQL client
+    yum:
+     name: mysql-client   
+     state: latest   
+     
+   
+      
+   
+  
+
+  

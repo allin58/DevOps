@@ -25,3 +25,10 @@ docker
 https://hub.docker.com/
 https://devtutorial.io/how-to-install-and-use-docker-on-ubuntu-18-04.html
 https://www.digitalocean.com/community/tutorials/docker-ru
+https://labs.play-with-docker.com/
+https://docs.docker.com/compose/compose-file/compose-versioning/ 
+https://dker.ru/docs/docker-compose/networking-in-compose/
+
+
+ansible
+https://galaxy.ansible.com/KAMI911/java_open_jdk11
