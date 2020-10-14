@@ -48,7 +48,7 @@
 #### 1.4 
 Пробросил порты, добавив в файл Vagrant  
 
-    config.vm.network "forwarded_port", guest: 22, host: 22022
+   - config.vm.network "forwarded_port", guest: 22, host: 22022
     
     На хосте получил ответ серверов(apch,nginx), запущенных на гостевой ОС
 

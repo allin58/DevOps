@@ -107,7 +107,7 @@
 
    - kubectl get pods -A
     
-    ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/get1.PNG) 
+   ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/get1.PNG)
 
    - kubectl get svc
     
