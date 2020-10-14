@@ -28,7 +28,13 @@ https://www.digitalocean.com/community/tutorials/docker-ru
 https://labs.play-with-docker.com/
 https://docs.docker.com/compose/compose-file/compose-versioning/ 
 https://dker.ru/docs/docker-compose/networking-in-compose/
-
+https://habr.com/ru/company/ruvds/blog/439980/
 
 ansible
 https://galaxy.ansible.com/KAMI911/java_open_jdk11
+
+kubernetes
+https://habr.com/ru/company/ruvds/blog/438984/
+https://serveradmin.ru/nastroyka-kubernetes/
+https://github.com/kubernetes/minikube/issues/7903
+https://kubernetes.io/docs/concepts/services-networking/ingress/

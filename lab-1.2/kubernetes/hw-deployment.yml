@@ -1,0 +1,22 @@
+---
+apiVersion : apps/v1
+kind: Deployment
+metadata: 
+  name : hw-deployment
+spec:
+  selector:
+    matchLabels:
+      project: hw-pod
+  template:
+    metadata:
+      labels:
+        project: hw-pod
+    spec:
+      containers:
+        - name: hw-container 
+          image: dev/hwimage
+          ports:
+          - containerPort: 8000
+          imagePullPolicy: Never
+                 
+    
