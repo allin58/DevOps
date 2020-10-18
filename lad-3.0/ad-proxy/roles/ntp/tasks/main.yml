@@ -1,0 +1,14 @@
+---
+# tasks file for ntp
+- name: Ensure NTP (for time synchronization) is installed.
+  yum: name=ntp state=present
+
+- name: Ensure NTP is running.
+  service: name=ntp state=started enabled=yes
+  
+- name: Copy over the NTP configuration
+  copy: src={{ file_name }} dest={{ destination_folder }} 
+  notify:
+  - Restart ntp
+
+  

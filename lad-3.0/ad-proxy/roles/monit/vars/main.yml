@@ -1,0 +1,4 @@
+---
+# vars file for monit
+file_name: haproxy 
+destination_folder: /etc/monit/conf.d

@@ -32,9 +32,16 @@ https://habr.com/ru/company/ruvds/blog/439980/
 
 ansible
 https://galaxy.ansible.com/KAMI911/java_open_jdk11
+https://www.cyberciti.biz/faq/ansible-apt-update-all-packages-on-ubuntu-debian-linux/
+https://habr.com/ru/company/selectel/blog/196620/
+https://github.com/vbotka/ansible-examples
 
 kubernetes
 https://habr.com/ru/company/ruvds/blog/438984/
 https://serveradmin.ru/nastroyka-kubernetes/
 https://github.com/kubernetes/minikube/issues/7903
 https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+Jenkins .net
+https://www.youtube.com/watch?v=9Hw_u9bOHVw
+https://medium.com/@hudsonmendes/build-net-4-5-on-linux-in-5-minutes-and-see-what-it-is-like-848ea45fc667

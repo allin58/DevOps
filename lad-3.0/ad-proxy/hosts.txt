@@ -1,0 +1,2 @@
+ [staging_servers]
+ubuntu ansible_host=10.0.2.2  ansible_port=22022
