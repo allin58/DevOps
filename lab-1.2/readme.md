@@ -70,7 +70,7 @@
  Добавил контенер с tomcat(с dockerhub).
  В nginx добавил перенаправление при обращении /tomcat.
 
-    ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/tom.PNG)   
+   ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-1.2/tom.PNG)   
 
 
 #### 1.10

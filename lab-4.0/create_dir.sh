@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 directory=$1
 max_deep=$2
@@ -51,11 +51,13 @@ else
 action=$((RANDOM % 2)) 
 if [ $action -eq 0 ] 
 then
-create_folder
-else
+
 folders=($(ls -d */))
 folder_id= $((  RANDOM % ${#folders[*]} ))
 cd ${folders[$folder_id]}
+
+else
+create_folder
 
 fi
 fi

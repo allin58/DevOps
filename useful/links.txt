@@ -8,10 +8,6 @@ shell
 https://gist.github.com/adeubank/994a4188fa8bd5513f26
 
 
-ELK
-https://mkdev.me/posts/vvedenie-v-elk-sobiraem-filtruem-i-analiziruem-bolshie-dannye
-
-
 packer
 https://www.serverlab.ca/tutorials/dev-ops/automation/how-to-use-packer-to-create-ubuntu-18-04-vagrant-boxes/
 https://habr.com/ru/post/251529/
@@ -55,3 +51,21 @@ linux BASH
 https://github.com/uran1980/web-dev-blog/blob/master/Linux/linux-commands.md#%D0%A1%D0%B5%D1%82%D1%8C-lan-%D0%B8-wifi
 https://tldp.org/LDP/Bash-Beginners-Guide/html/intro_10.html
 https://habr.com/ru/company/ruvds/blog/327248/
+
+
+ELK
+https://habr.com/ru/post/324760/
+https://mkdev.me/posts/vvedenie-v-elk-sobiraem-filtruem-i-analiziruem-bolshie-dannye
+
+logstash
+https://habr.com/ru/post/165059/
+
+
+apache
+https://www.digitalocean.com/community/tutorials/apache-ubuntu-18-04-ru
+https://www.digitalocean.com/community/tutorials/linux-apache-mysql-php-lamp-ubuntu-18-04-ru
+
+
+SSL
+https://help.ubuntu.ru/wiki/apache_%D0%B8_https
+
