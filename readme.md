@@ -5,6 +5,7 @@ DecOps labs
 - lab-3.0 - ansible
 - lab-4.0 - linux
 - lab-5.0 - SSL
+- lab-6.0 - AWS
     
     
     

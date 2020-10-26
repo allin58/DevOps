@@ -43,7 +43,7 @@
     docker push allin5885/apache2
 
     Ссылка на dockerhub
-    [https://hub.docker.com/repository/docker/allin5885/apache2]()
+    [https://hub.docker.com/repository/docker/allin5885/apache2](https://hub.docker.com/repository/docker/allin5885/apache2)
 
     
    
@@ -76,7 +76,7 @@
 #### 1.10
    Запустил локальный кластер:
    - sudo minikube start --vm-driver=docker
-    (были проблемы, использовал инструкцию [https://github.com/kubernetes/minikube/issues/7903]() )
+    (были проблемы, использовал инструкцию [https://github.com/kubernetes/minikube/issues/7903](https://github.com/kubernetes/minikube/issues/7903) )
     
   Создал пространство имён: 
   - kubectl create namespace testcluster.
@@ -84,7 +84,7 @@
    
    Далее следовал инструкции по созданиз ingress  контроллера для minicube
    
-   [https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/]()
+   [https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
    
   - minikube addons enable ingress
    
