@@ -69,3 +69,7 @@ https://www.digitalocean.com/community/tutorials/linux-apache-mysql-php-lamp-ubu
 SSL
 https://help.ubuntu.ru/wiki/apache_%D0%B8_https
 
+
+AWS
+https://habr.com/ru/company/epam_systems/blog/167635/
+
