@@ -1,0 +1,4 @@
+
+[servers]
+
+ubuntu ansible_host=10.0.2.2 ansible_port=28022 ansible_user=vagrant

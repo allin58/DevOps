@@ -1,0 +1,23 @@
+---
+- name: Install app
+  hosts: all    
+  become: yes 
+
+  vars:
+    - file_name: /var/lib/jenkins/workspace/Staging/target/springmvcfinal-1.0-SNAPSHOT.war
+    - destination_folder: /opt/tomcat/apache-tomcat-8.5.32/webapps
+    - java_version: 8
+    - java_subversion: 201
+    - java_download_from: local 
+  
+  roles:
+    - srsp.oracle-java   
+    - { role: flxpeters.tomcat8, tomcat_java_home: /usr/lib/jvm/jdk1.8.0_201 }
+
+  tasks:  
+
+  - name: Copyfile
+    copy: src={{ file_name }} dest={{ destination_folder }} 
+
+  - name: Restart TomCat
+    shell: service tomcat restart

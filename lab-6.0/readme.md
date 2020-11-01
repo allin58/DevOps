@@ -55,7 +55,20 @@ public-subnet-1 10.0.5.0/24
 
 При принудительной остоновке одного из серверов LoadBalancer перевёл все запросы на работающий сервер.
 
+##### 6.5 RDS
 
+При создании RDS инстанса была так же создана subnetgroup.
+База успешно запустилась
+
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db.PNG) 
+
+
+База видна с двух разных серверов
+- psql --host=database-1.c8qtsaptetft.us-east-1.rds.amazonaws.com --port=5432 --username=postgres --password
+
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db2.PNG) 
+
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db3.PNG) 
 
 
 

@@ -8,10 +8,14 @@ shell
 https://gist.github.com/adeubank/994a4188fa8bd5513f26
 
 
+java
+https://habr.com/ru/post/471772/
+
 packer
 https://www.serverlab.ca/tutorials/dev-ops/automation/how-to-use-packer-to-create-ubuntu-18-04-vagrant-boxes/
 https://habr.com/ru/post/251529/
 https://habr.com/ru/company/express42/blog/212085/
+https://github.com/kaorimatz/packer-templates    шаблоны
 
 
 qeum
@@ -38,10 +42,10 @@ https://serveradmin.ru/nastroyka-kubernetes/
 https://github.com/kubernetes/minikube/issues/7903
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 
-Jenkins .net
+Jenkins 
 https://www.youtube.com/watch?v=9Hw_u9bOHVw
 https://medium.com/@hudsonmendes/build-net-4-5-on-linux-in-5-minutes-and-see-what-it-is-like-848ea45fc667
-
+pipeline  https://infostart.ru/1c/articles/1210995/
 
 rsyslog
 https://www.k-max.name/linux/rsyslog-na-debian-nastrojka-servera/
@@ -56,9 +60,16 @@ https://habr.com/ru/company/ruvds/blog/327248/
 ELK
 https://habr.com/ru/post/324760/
 https://mkdev.me/posts/vvedenie-v-elk-sobiraem-filtruem-i-analiziruem-bolshie-dannye
+https://serveradmin.ru/ustanovka-i-nastroyka-elasticsearch-logstash-kibana-elk-stack/
+
+kibana
+https://habr.com/ru/post/441214/
+https://coderlessons.com/tutorials/bolshie-dannye-i-analitika/vyuchit-kibanu/kibana-kratkoe-rukovodstvo
+
 
 logstash
 https://habr.com/ru/post/165059/
+https://ru.bmstu.wiki/Elastic_Logstash
 
 
 apache
@@ -72,4 +83,9 @@ https://help.ubuntu.ru/wiki/apache_%D0%B8_https
 
 AWS
 https://habr.com/ru/company/epam_systems/blog/167635/
+https://calculator.s3.amazonaws.com/index.html
+https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html#free-budget
 
+
+git
+https://git-scm.com/book/ru/v2
