@@ -1,0 +1,18 @@
+---
+- name: Backup
+  hosts: all    
+  become: yes 
+
+  vars:
+    - file_name: /home/node/backup/staging.war  
+    - destination_folder: /opt/tomcat/apache-tomcat-8.5.32/webapps
+  
+
+
+  tasks:  
+
+  - name: Copyfile
+    copy: src={{ file_name }} dest={{ destination_folder }} 
+
+  - name: Restart TomCat
+    shell: service tomcat restart
