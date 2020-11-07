@@ -12,8 +12,7 @@
     - role: geerlingguy.haproxy  
     - role: ntp
     - role: monit
- 
-  
+   
   tasks:  
 
     - name: Copy haproxy conf
