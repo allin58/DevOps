@@ -38,14 +38,3 @@ Monit делает http запрос, если ответа нету то сер
 
 Когда удалось подружить kibana и elasticsearch
 ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-3.0/kibana.PNG) 
-
-
-
-
-
-
-
-
-
-
-
