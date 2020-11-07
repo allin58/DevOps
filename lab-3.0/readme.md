@@ -8,37 +8,37 @@
 Отправка public-key на сервер:
 - ssh-copy-id vagrant@10.0.2.2 -p 22022
 
-##### ad-proxy
+Созданно 3 виртуальных машины:
+- ab-haproxy
+- ab-logstash
+- ab-webui
 
-- ansible-galaxy init ntp
+Требуемое ПО, на все сервера, устанавливается посредством ansible.
 
-   Для конфигурации ntp создал файл ntp.conf, добавил в него строчку 
-"server europe.pool.ntp.org minpoll 12 maxppol 17"(примерно раз в сутки будет происходить синхронизация времени).
-Этот фаил скопировал на сервер в папку /etc.
-Добавил hendler для перезапуска ntp.
+На каждый из серверов установлен ntp, который раз в сутки обновляет время(конфигурация cron'а установлена через ansible)
 
+Так же на каждом из серверов установлен monit:
+- на ab-haproxy следит за haproxy 
+- на ab-logstash следит за elasticsearch
+- на ab-webui следит за nginx
 
-- За основу haproxy - была взята роль https://galaxy.ansible.com/geerlingguy/haproxy
-
-
-- ansible-galaxy init monit
- 
-  Для конфигурации monit создал файл haproxy, в нем определил сценарий работы monit (if failed host 127.0.0.1 port 80 protocol http for 1 cycles then restart) т.е. если сервер не отвечает то haproxy перезапускается).
-Этот файл скопирован в /etc/monit/conf.d.
-Добавил hendler для перезапуска monit.
+Monit делает http запрос, если ответа нету то сервис перезапускается.
 
 
+Последовательность работы ELK
+![Image alt](https://github.com/allin58/DevOps/blob/master/lab-3.0/2.PNG)  
 
-- Ini файл генерируется следующим образом
-```yaml
-   tasks: 
-   - name: Creating ini file
-     ini_file:
-       path: /etc/ini_file.txt
-       section: general
-       option: uniqueID  
-       value: "{{ 1000 | random | to_uuid | upper }}" 
-``` 
+
+
+Для отладки - использовал команды
+- nc -l 514 (шлёт ли лог rsyslog на ab-logstash)
+- curl -X GET localhost:9200/_aliases?pretty (принимает ли сообщения elasticsearch от logstash)
+
+
+
+Когда удалось подружить kibana и elasticsearch
+![Image alt](https://github.com/allin58/DevOps/blob/master/lab-3.0/kibana.PNG) 
+
 
 
 

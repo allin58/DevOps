@@ -1,0 +1,10 @@
+---
+# tasks file for monit
+
+- name: Install monit
+  apt: name=monit 
+
+- name: Copy over monit configuration
+  copy: src={{ monit_conf }} dest={{ destination_folder_monit }}
+  notify:
+  - Restart monit

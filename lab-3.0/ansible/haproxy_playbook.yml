@@ -1,0 +1,34 @@
+---
+- name: Install app
+  hosts: ab-haproxy   
+  become: yes 
+
+  vars:   
+    - haproxy_conf: haproxy/haproxy.cfg   
+    - destination_haproxy_folder: /etc/haproxy
+    - monit_conf: haproxy  
+  
+  roles:
+    - role: geerlingguy.haproxy  
+    - role: ntp
+    - role: monit
+ 
+  
+  tasks:  
+
+    - name: Copy haproxy conf
+      copy: src={{ haproxy_conf }} dest={{ destination_haproxy_folder }} 
+
+    - name: Restart haproxy
+      shell: service haproxy restart
+ 
+    - name: Creating ini file
+      ini_file:
+        path: /etc/ini_file.txt
+        section: general
+        option: uniqueID  
+        value: "{{ 1000 | random | to_uuid | upper }}" 
+  
+
+
+

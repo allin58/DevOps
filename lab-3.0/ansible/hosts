@@ -1,0 +1,13 @@
+
+[ab-webui]
+webui ansible_host=10.0.2.2 ansible_port=3022 ansible_user=vagrant
+
+
+[ab-logstash]
+logstash ansible_host=10.0.2.2 ansible_port=5022 ansible_user=vagrant
+
+
+[ab-haproxy]
+logstash ansible_host=10.0.2.2 ansible_port=7022 ansible_user=vagrant
+
+

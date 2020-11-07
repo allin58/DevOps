@@ -1,0 +1,15 @@
+---
+# tasks file for ntp
+- name: Ensure NTP (for time synchronization) is installed.
+  yum: name=ntp state=present
+
+- name: Ensure NTP is running.
+  service: name=ntp state=started enabled=yes
+  
+- name: Ensure a job that runs updating ntp
+  cron:
+    name: "check dirs"
+    day: "*/1"   
+    job: "service ntp restart"
+
+  

@@ -1,0 +1,56 @@
+---
+galaxy_info:
+    author: srsp
+    description: Oracle JDK 8 to 13 for CentOS/Fedora/Debian/Ubuntu/Suse/MacOSX
+    license: Apache
+
+    min_ansible_version: 2.4.0
+
+    platforms:
+        - name: Ubuntu
+          versions:
+              - precise
+              - trusty
+              - xenial
+              - yakkety
+              - zesty
+              - bionic
+        - name: Debian
+          versions:
+              - wheezy
+              - jessie
+              - stretch
+              - buster
+        - name: EL
+          versions:
+              - 6
+              - 7
+        - name: fedora
+          versions:
+              - 29
+        - name: opensuse
+          versions:
+              - all
+        - name: SLES
+          versions:
+              - all
+        - name: MacOSX
+          versions:
+              - 10.12
+              - 10.13
+              - 10.14
+
+    galaxy_tags:
+        - oracle
+        - java
+        - development
+        - jdk
+        - jdk8
+        - jdk9
+        - jdk10
+        - jdk11
+        - jvm
+        - jce
+        - system
+
+dependencies: []

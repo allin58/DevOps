@@ -1,4 +1,0 @@
----
-# vars file for ntp
-file_name: ntp.conf
-destination_folder: /etc/ntp.conf

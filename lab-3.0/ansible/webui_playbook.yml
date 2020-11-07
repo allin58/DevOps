@@ -1,0 +1,36 @@
+---
+- name: Install app
+  hosts: ab-webui    
+  become: yes 
+
+  vars:
+    - rsyslog_conf: rsyslog/50-default.conf
+    - json_template: rsyslog/01-json-template.conf
+    - destination_folder: /etc/rsyslog.d
+    - kibana_elasticsearch_url: "http://10.0.2.2:9200"
+    - monit_conf: webui 
+
+  roles:
+    - role: apt-up
+    - role: geerlingguy.kibana
+    - role: nginx
+    - role: ntp
+    - role: monit
+
+  tasks:  
+
+  - name: Copy rsyslog conf
+    copy: src={{ rsyslog_conf }} dest={{ destination_folder }}
+
+  - name: Copy json template
+    copy: src={{ json_template }} dest={{ destination_folder }} 
+
+  - name: Restart rsyslog
+    shell: service rsyslog restart
+  
+  - name: Creating ini file
+    ini_file:
+      path: /etc/ini_file.txt
+      section: general
+      option: uniqueID  
+      value: "{{ 1000 | random | to_uuid | upper }}" 

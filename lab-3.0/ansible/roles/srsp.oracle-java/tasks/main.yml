@@ -1,0 +1,32 @@
+---
+# Top-level installer for Oracle JDK
+
+- name: Precondition - java_version
+  fail: msg="ERROR - Required variable 'java_version' missing."
+  when: java_version is not defined
+
+- import_tasks: set-platform-vars.yml
+
+- import_tasks: set-jdk-vars.yml
+
+- name: Install libselinux-python binary for Ansible to work
+  yum: name=libselinux-python state=present
+  when: ansible_pkg_mgr == "yum"
+
+- name: Copy scripts to server (check-java-version.sh)
+  copy: src="check-java-version.sh" dest="{{ java_download_path }}/" mode="a+x"
+
+- name: Check if specific version of Oracle JDK is installed?
+  command: "{{ java_download_path }}/check-java-version.sh {{ jdk_version }}"
+  register: jdk_info
+  changed_when: false
+  failed_when: jdk_info.rc > 0
+
+- import_tasks: generate_tmp.yml
+  when: (jdk_info.stdout|from_json).not_found
+
+- import_tasks: install.yml
+  when: (jdk_info.stdout|from_json).not_found
+
+- import_tasks: install_jce.yml
+  when: java_install_jce
