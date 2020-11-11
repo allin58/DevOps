@@ -85,6 +85,10 @@ AWS
 https://habr.com/ru/company/epam_systems/blog/167635/
 https://calculator.s3.amazonaws.com/index.html
 https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html#free-budget
+   ElasticBeanstalk
+     https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-create.html
+
+
 
 
 git

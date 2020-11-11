@@ -40,7 +40,7 @@
     
  Закомитил контенер в образ
   - docker commit apach2 allin5885/apache2
-    docker push allin5885/apache2
+  - docker push allin5885/apache2
 
     Ссылка на dockerhub
     [https://hub.docker.com/repository/docker/allin5885/apache2](https://hub.docker.com/repository/docker/allin5885/apache2)
@@ -98,7 +98,7 @@
   
   - minicube service hw-deployment -n testcluster (через браузер произойдёт обращение к приложению)
   
- -  kubectl apply -f ingress-nginx.yaml
+  - kubectl apply -f ingress-nginx.yaml
    
    Проверил выполнение rule при вводе /hw
 

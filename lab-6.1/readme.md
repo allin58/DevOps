@@ -30,14 +30,14 @@ public-subnet-1 10.0.5.0/24
 -для private subnet добавил Network ACLs
 
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/1.PNG)  
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/1.PNG)  
             
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/ACL.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/ACL.PNG) 
 
 
 ##### 6.1.1 Создать Security Group 
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/sg.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/sg.PNG) 
 
 
 ##### 6.2 Сгенерировать собственный RSA ключ 
@@ -49,7 +49,7 @@ public-subnet-1 10.0.5.0/24
 ##### 6.3 EC2
 
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/nginx.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/nginx.PNG) 
 
 ##### 6.4 ELB
 
@@ -60,15 +60,15 @@ public-subnet-1 10.0.5.0/24
 При создании RDS инстанса была так же создана subnetgroup.
 База успешно запустилась
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/db.PNG) 
 
 
 База видна с двух разных серверов
 - psql --host=database-1.c8qtsaptetft.us-east-1.rds.amazonaws.com --port=5432 --username=postgres --password
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db2.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/db2.PNG) 
 
- ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.0/db3.PNG) 
+ ![Image alt](https://github.com/allin58/DevOps/blob/master/lab-6.1/db3.PNG) 
 
 
 
